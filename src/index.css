@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    background-color: #f8fafc;
+    color: #0f1d33;
+  }
+
+  ::selection {
+    background-color: #14a89a;
+    color: white;
+  }
+}
+
+@layer components {
+  .glass {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .glass-navy {
+    background: rgba(15, 29, 51, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
+  .card-shadow {
+    box-shadow: 0 1px 3px rgba(15, 29, 51, 0.04), 0 8px 24px rgba(15, 29, 51, 0.06);
+  }
+
+  .card-shadow-lg {
+    box-shadow: 0 4px 12px rgba(15, 29, 51, 0.06), 0 20px 48px rgba(15, 29, 51, 0.1);
+  }
+
+  .glow-teal {
+    box-shadow: 0 0 0 1px rgba(20, 168, 154, 0.2), 0 8px 32px rgba(20, 168, 154, 0.15);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: rgba(15, 29, 51, 0.15);
+    border-radius: 3px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: rgba(15, 29, 51, 0.25);
+  }
+}
+
+.shimmer-bg {
+  background: linear-gradient(90deg, #f1f5f9 0%, #e2e8f0 50%, #f1f5f9 100%);
+  background-size: 1000px 100%;
+}
