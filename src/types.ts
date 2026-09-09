@@ -10,7 +10,8 @@ export type Page =
   | 'mfr-check'
   | 'mfr-result'
   | 'mfr-fixes'
-  | 'consumer';
+  | 'consumer'
+  | 'consumer-result';
 
 export type AppMode = 'inspector' | 'manufacturer';
 

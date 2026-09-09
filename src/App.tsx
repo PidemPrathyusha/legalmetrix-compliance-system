@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import type { Page } from '@/types';
 import RoleSelect from '@/components/RoleSelect';
-import ConsumerPlaceholder from '@/components/ConsumerPlaceholder';
+import ConsumerScan from '@/components/ConsumerScan';
+import ConsumerResult from '@/components/ConsumerResult';
 import Landing from '@/components/Landing';
 import Sidebar from '@/components/Sidebar';
 import MfrSidebar from '@/components/MfrSidebar';
@@ -31,7 +32,11 @@ function App() {
   }
 
   if (page === 'consumer') {
-    return <ConsumerPlaceholder onNavigate={navigate} />;
+    return <ConsumerScan onNavigate={navigate} />;
+  }
+
+  if (page === 'consumer-result') {
+    return <ConsumerResult onNavigate={navigate} />;
   }
 
   if (page === 'landing') {

@@ -19,6 +19,7 @@ const pageTitles: Record<Page, { title: string; subtitle: string }> = {
   'mfr-result': { title: 'Pre-Compliance Result', subtitle: 'AI analysis of your package declarations' },
   'mfr-fixes': { title: 'Fix Suggestions', subtitle: 'Actionable fixes for flagged compliance issues' },
   consumer: { title: 'Consumer Portal', subtitle: 'Coming Soon' },
+  'consumer-result': { title: 'Compliance Info', subtitle: 'Simple compliance summary' },
 };
 
 export default function Topbar({ onOpenMobile, current }: TopbarProps) {
